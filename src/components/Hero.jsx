@@ -28,7 +28,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4">
           <a 
-            href="#proyectos"
+            href="#kairos"
             className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-[#0B0B0B] bg-[#3ECF8E] rounded-full hover:bg-[#34B67A] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#3ECF8E]/20 tracking-wide"
           >
             Ver proyectos
