@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0B0B0B;
+  --bg-secondary: #111111;
+  --bg-elevated: #1A1A1A;
+
+  --text-primary: #EAEAEA;
+  --text-secondary: #A1A1AA;
+  --text-muted: #6B7280;
+
+  --color-primary: #3ECF8E;
+  --color-primary-hover: #34B67A;
+  --color-primary-active: #2DA56D;
+  --color-primary-soft: rgba(62, 207, 142, 0.1);
+
+  --border: #222222;
+  --divider: #1F1F1F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: #0B0B0B;
+}
+
+@layer utilities {
+  .bg-primary { background-color: var(--bg-primary); }
+  .bg-secondary { background-color: var(--bg-secondary); }
+  .bg-elevated { background-color: var(--bg-elevated); }
+  
+  .text-primary { color: var(--text-primary); }
+  .text-secondary { color: var(--text-secondary); }
+  .text-muted { color: var(--text-muted); }
+  
+  .border-custom { border-color: var(--border); }
+  .divider { border-color: var(--divider); }
+  
+  .bg-primary-custom { background-color: var(--color-primary); }
+  .bg-primary-hover { background-color: var(--color-primary-hover); }
+  .text-primary-custom { color: var(--color-primary); }
+}
