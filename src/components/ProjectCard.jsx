@@ -23,7 +23,9 @@ function parseProjectContent(html) {
     pMatches.forEach(p => {
       const text = p.replace(/<p[^>]*>|<\/p>/gi, '').replace(/<[^>]+>/g, '').replace(/[*_]/g, '').trim()
       if (text.toLowerCase().includes('backend') || text.toLowerCase().includes('frontend') || text.toLowerCase().includes('tecnolog')) {
-        stack = text
+        let techText = text.replace(/backend:?/i, '').replace(/frontend:?/i, '').replace(/tecnologías?/i, '').trim()
+        techText = techText.replace(/go\s*\(gin\)/gi, 'Go').replace(/postgresql/gi, 'PostgreSQL').replace(/react/gi, 'React').replace(/tailwind\s*css/gi, 'Tailwind CSS').replace(/\+/g, ' • ')
+        stack = techText
       }
     })
   }
@@ -87,7 +89,7 @@ export default function ProjectCard({ project, index }) {
 
           {stack && (
             <div className="pt-4 border-t border-[#1F1F1F]">
-              <span className="text-xs text-[#6B7280] uppercase tracking-wider">{stack}</span>
+              <span className="text-xs text-[#6B7280] uppercase tracking-wider">Stack: {stack}</span>
             </div>
           )}
         </div>
