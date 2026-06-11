@@ -45,7 +45,7 @@ export default function Contact() {
 
         <footer className="mt-24 pt-8 border-t border-[#1F1F1F]">
           <p className="text-sm text-[#6B7280]">
-            © 2024 Kerux. Desarrollo de software a medida.
+            © {new Date().getFullYear()} Kerux. Desarrollo de software a medida. Hecho con mucho 🧉
           </p>
         </footer>
       </div>

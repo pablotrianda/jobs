@@ -16,7 +16,12 @@ export default function Hero() {
           Kerux
         </span>
         
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#EAEAEA] mb-10 max-w-4xl leading-[1.1]">
+        <h1 className="flex flex-wrap items-center gap-3 md:gap-5 text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#EAEAEA] mb-10 max-w-4xl leading-[1.1]">
+          <img 
+            src="/logo/kerux_logo.png" 
+            alt="Kerux" 
+            className="h-10 md:h-12 lg:h-16 w-auto"
+          />
           Desarrollo de software a medida
         </h1>
         
