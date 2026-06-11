@@ -9,6 +9,11 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 py-32 relative overflow-hidden">
+      <img 
+        src="/logo/kerux_logo.png" 
+        alt="Kerux" 
+        className="hidden lg:block absolute right-12 xl:right-24 top-1/2 -translate-y-1/2 w-80 xl:w-96 opacity-60 rounded-3xl border border-[#222222]"
+      />
       <div 
         className={`relative transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
@@ -16,12 +21,7 @@ export default function Hero() {
           Kerux
         </span>
         
-        <h1 className="flex flex-wrap items-center gap-3 md:gap-5 text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#EAEAEA] mb-10 max-w-4xl leading-[1.1]">
-          <img 
-            src="/logo/kerux_logo.png" 
-            alt="Kerux" 
-            className="h-10 md:h-12 lg:h-16 w-auto"
-          />
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#EAEAEA] mb-10 max-w-4xl leading-[1.1]">
           Desarrollo de software a medida
         </h1>
         
