@@ -123,7 +123,7 @@ export default function Kairos() {
               </div>
 
               <a 
-                href="https://kairosagenda.com/"
+                href="https://www.kairosagenda.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-[#EAEAEA] bg-[#1A1A1A] border border-[#222222] rounded-full hover:border-[#3ECF8E] hover:text-[#3ECF8E] transition-all duration-300 hover:-translate-y-0.5"
