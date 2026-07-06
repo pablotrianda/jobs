@@ -49,9 +49,6 @@ export default function Kairos() {
           <h2 className="text-sm font-semibold tracking-wider uppercase text-[#6B7280]">
             Producto
           </h2>
-          <span className="px-3 py-1 text-xs font-medium bg-[#3ECF8E]/10 text-[#3ECF8E] rounded-full">
-            Próximo lanzamiento
-          </span>
         </div>
 
         <p className="text-3xl md:text-4xl font-bold text-[#EAEAEA] mb-6 max-w-2xl">
